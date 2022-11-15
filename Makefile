@@ -1,0 +1,3 @@
+sub:
+	exercism submit $(f)  
+	
