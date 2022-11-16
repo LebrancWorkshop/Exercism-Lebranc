@@ -1,3 +1,4 @@
-sub:
-	exercism submit $(f)  
+# S => Submit. 
+s:
+	exercism submit $(f) && clear  
 	
