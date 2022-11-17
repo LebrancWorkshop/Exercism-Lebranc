@@ -1,3 +1,5 @@
 .exercism
 .vscode 
 build 
+.lsp
+.clj-kondo 
