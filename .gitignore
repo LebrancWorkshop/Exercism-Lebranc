@@ -3,3 +3,4 @@
 build 
 .lsp
 .clj-kondo 
+.elixir_ls 
