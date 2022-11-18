@@ -1,5 +1,9 @@
 package lasagna
 
+import (
+	"fmt" 
+)
+
 // TODO: define the 'PreparationTime()' function
 func PreparationTime(layers []string, times int) int {
 	if times == 0 {
@@ -9,7 +13,7 @@ func PreparationTime(layers []string, times int) int {
 }
 
 // TODO: define the 'Quantities()' function
-func Quantitites(layers []string) (int, float64) {
+func Quantities(layers []string) (int, float64) {
 	noodleAmount := 0;
 	sauceAmount := 0.0;
 
@@ -29,5 +33,18 @@ func Quantitites(layers []string) (int, float64) {
 }
 
 // TODO: define the 'AddSecretIngredient()' function
+func AddSecretIngredient(friendsList []string, myList []string) {
+	myList[len(myList) - 1] = friendsList[len(friendsList) - 1]; 
+	fmt.Println(myList); 
+} 
 
 // TODO: define the 'ScaleRecipe()' function
+func ScaleRecipe(inputList []float64, portions int) []float64 {
+	newInputList := make([]float64, 0);  
+
+	for _, v := range inputList {
+		newInputList = append(newInputList, (v / 2.0) * float64(portions));  
+	}
+
+	return newInputList; 
+}
