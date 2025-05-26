@@ -1,6 +1,7 @@
 .exercism
-.vscode 
-build 
+.vscode
+build
 .lsp
-.clj-kondo 
-.elixir_ls 
+.clj-kondo
+.elixir_ls
+.qodo
